@@ -1,0 +1,12 @@
+.container1234 {
+  display: flex;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.child {
+  width: 33.33%;
+  text-align: center;
+}

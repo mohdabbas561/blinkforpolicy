@@ -1,0 +1,74 @@
+.Parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -70px;
+  
+}
+
+.ImageDiv {
+  display: none; /* hide image on small screens */
+}
+
+@media only screen and (min-width: 768px) {
+  /* show image on screens larger than 768px */
+  .ImageDiv {
+    display: block;
+    width: 50%;
+    margin-right: 20px;
+    
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  .ImageDiv img {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-container {
+    width: 50%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 30px 30px 10px 30px;
+    border-radius: 10px;
+    
+  }
+}
+
+/* Center the form on small screens */
+@media only screen and (max-width: 767px) {
+  .form-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 4px;
+  margin-top: 20px;
+  border: 1px solid #f8983a;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.form-container input[type="submit"] {
+  max-width: 100%;
+  background-color: #F6AD55;
+  border: none;
+  margin-bottom: 40px;
+  cursor: pointer;
+  color: black;
+  padding: 11px; /* reduce padding */
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 40px;
+  font-size: 14px; /* reduce font size */
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #F59E0B;
+}
